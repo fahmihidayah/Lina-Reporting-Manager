@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report_site_dua" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="788a9ce1-803e-43b6-87f3-e402827636de">
+	<property name="ireport.zoom" value="0.8052550000000009"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="103"/>
+	<field name="title" class="java.lang.String"/>
+	<field name="logoCompanny" class="java.lang.String"/>
+	<field name="logoMitra" class="java.lang.String"/>
+	<field name="imageTowerSatu" class="java.lang.String"/>
+	<field name="imageTowerDua" class="java.lang.String"/>
+	<field name="imagePanoramaSatu" class="java.lang.String"/>
+	<field name="imagePanoramaDua" class="java.lang.String"/>
+	<field name="imagePhotoLainSatu" class="java.lang.String"/>
+	<field name="imagePhotoLainDua" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="551" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="a782e0b1-70ad-4140-aafd-cac2a155cec1" x="126" y="0" width="306" height="52"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{title}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement uuid="774896c5-f8df-43d6-8d48-3c64e2ea5dc9" x="56" y="0" width="52" height="52"/>
+				<imageExpression><![CDATA[$F{logoMitra}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="237bc65f-487d-49cf-8620-5dc775c94cf0" x="454" y="0" width="52" height="52"/>
+				<imageExpression><![CDATA[$F{logoCompanny}]]></imageExpression>
+			</image>
+			<rectangle>
+				<reportElement uuid="1c0a655b-b040-44a8-a74f-afda2ca9e30b" x="83" y="72" width="132" height="162"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="01bef77c-fd97-4910-8f45-6e0bde696c9a" x="331" y="73" width="132" height="162"/>
+			</rectangle>
+			<image>
+				<reportElement uuid="e0e5b802-3574-4ba6-97e2-d5f2788bfe41" x="332" y="74" width="130" height="160"/>
+				<imageExpression><![CDATA[$F{imageTowerDua}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="17667b22-4ded-4955-9cf9-93eac65bb0e9" x="84" y="73" width="130" height="160"/>
+				<imageExpression><![CDATA[$F{imageTowerSatu}]]></imageExpression>
+			</image>
+			<rectangle>
+				<reportElement uuid="51c8fc1f-f982-490a-94b7-126de4624ef7" x="83" y="262" width="132" height="102"/>
+			</rectangle>
+			<image>
+				<reportElement uuid="17840ddf-a22d-46cc-b81d-ecc7e09f9fbf" x="84" y="264" width="130" height="100"/>
+				<imageExpression><![CDATA[$F{imagePanoramaSatu}]]></imageExpression>
+			</image>
+			<rectangle>
+				<reportElement uuid="aa3d1bad-fdee-45c7-ae6f-497b7dd5c271" x="332" y="260" width="132" height="102"/>
+			</rectangle>
+			<image>
+				<reportElement uuid="de8250d4-4543-41ed-a6b7-a2f1e2f88036" x="333" y="262" width="130" height="100"/>
+				<imageExpression><![CDATA[$F{imagePanoramaDua}]]></imageExpression>
+			</image>
+			<rectangle>
+				<reportElement uuid="dba45e08-68fd-4cfd-9311-2fdb625f5882" x="333" y="394" width="132" height="102"/>
+			</rectangle>
+			<image>
+				<reportElement uuid="c22a0aec-8c38-4159-a301-e5fd07b72339" x="334" y="396" width="130" height="100"/>
+				<imageExpression><![CDATA[$F{imagePhotoLainDua}]]></imageExpression>
+			</image>
+			<rectangle>
+				<reportElement uuid="57bc8607-3228-4799-8e58-5245dd72e4e1" x="84" y="395" width="132" height="102"/>
+			</rectangle>
+			<image>
+				<reportElement uuid="9d7871d7-e8ff-49e7-ab48-9b86ab48cd44" x="85" y="396" width="130" height="100"/>
+				<imageExpression><![CDATA[$F{imagePhotoLainSatu}]]></imageExpression>
+			</image>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="8" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="9" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="8" splitType="Stretch"/>
+	</summary>
+</jasperReport>

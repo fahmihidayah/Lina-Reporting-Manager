@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report_site_dua" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="788a9ce1-803e-43b6-87f3-e402827636de">
+	<property name="ireport.zoom" value="1.0000000000000024"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="title" class="java.lang.String"/>
+	<field name="logoCompanny" class="java.lang.String"/>
+	<field name="logoMitra" class="java.lang.String"/>
+	<field name="imageTowerSatu" class="java.lang.String"/>
+	<field name="imageTowerDua" class="java.lang.String"/>
+	<field name="imagePanoramaSatu" class="java.lang.String"/>
+	<field name="imagePanoramaDua" class="java.lang.String"/>
+	<field name="imagePhotoLainSatu" class="java.lang.String"/>
+	<field name="imagePhotoLainDua" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="784" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="16dba0e3-82f1-4d37-9473-1719489a2746" x="288" y="725" width="223" height="23"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="1c0a655b-b040-44a8-a74f-afda2ca9e30b" x="74" y="121" width="155" height="215"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="01bef77c-fd97-4910-8f45-6e0bde696c9a" x="321" y="121" width="155" height="215"/>
+			</rectangle>
+			<image scaleImage="RealSize">
+				<reportElement uuid="e0e5b802-3574-4ba6-97e2-d5f2788bfe41" x="329" y="128" width="140" height="200"/>
+				<imageExpression><![CDATA[$F{imageTowerDua}]]></imageExpression>
+			</image>
+			<image scaleImage="RealSize">
+				<reportElement uuid="17667b22-4ded-4955-9cf9-93eac65bb0e9" x="82" y="128" width="140" height="200"/>
+				<imageExpression><![CDATA[$F{imageTowerSatu}]]></imageExpression>
+			</image>
+			<rectangle>
+				<reportElement uuid="51c8fc1f-f982-490a-94b7-126de4624ef7" x="45" y="363" width="223" height="167"/>
+			</rectangle>
+			<image scaleImage="RealSize">
+				<reportElement uuid="17840ddf-a22d-46cc-b81d-ecc7e09f9fbf" x="52" y="369" width="210" height="155"/>
+				<imageExpression><![CDATA[$F{imagePanoramaSatu}]]></imageExpression>
+			</image>
+			<rectangle>
+				<reportElement uuid="aa3d1bad-fdee-45c7-ae6f-497b7dd5c271" x="287" y="363" width="223" height="167"/>
+			</rectangle>
+			<image scaleImage="RealSize">
+				<reportElement uuid="de8250d4-4543-41ed-a6b7-a2f1e2f88036" x="294" y="369" width="210" height="155"/>
+				<imageExpression><![CDATA[$F{imagePanoramaDua}]]></imageExpression>
+			</image>
+			<rectangle>
+				<reportElement uuid="dba45e08-68fd-4cfd-9311-2fdb625f5882" x="288" y="558" width="223" height="167"/>
+			</rectangle>
+			<image scaleImage="RealSize">
+				<reportElement uuid="c22a0aec-8c38-4159-a301-e5fd07b72339" x="295" y="564" width="210" height="155"/>
+				<imageExpression><![CDATA[$F{imagePhotoLainDua}]]></imageExpression>
+			</image>
+			<rectangle>
+				<reportElement uuid="57bc8607-3228-4799-8e58-5245dd72e4e1" x="45" y="558" width="223" height="167"/>
+			</rectangle>
+			<image scaleImage="RealSize">
+				<reportElement uuid="9d7871d7-e8ff-49e7-ab48-9b86ab48cd44" x="52" y="564" width="210" height="155"/>
+				<imageExpression><![CDATA[$F{imagePhotoLainSatu}]]></imageExpression>
+			</image>
+			<rectangle>
+				<reportElement uuid="947b0b6a-6bd3-4938-a066-ea8291cf1d2f" x="74" y="336" width="155" height="20"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="91b2f8fd-c928-46d4-9045-cacbe67febe1" x="74" y="336" width="154" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[PHOTO TOWER 1]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement uuid="b8384c7d-846c-4645-8afe-3be0cce76f35" x="321" y="336" width="155" height="20"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="2b8f20bc-dc16-4d9b-b3a2-b1eb2c976b23" x="322" y="335" width="154" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[PHOTO TOWER 2]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement uuid="db35f733-ca3c-41a0-928d-253db7efb8dd" x="45" y="530" width="223" height="23"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="67651df7-e658-4390-8d76-b5d79cc113b9" x="48" y="532" width="218" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[PANORAMA 1]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement uuid="1a23d2d9-521c-4009-9479-dfd7ec787282" x="287" y="530" width="223" height="23"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="3d93e751-1657-4ce2-a3e9-a03223239395" x="290" y="531" width="218" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[PANORAMA 2]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement uuid="0ad9471b-8033-4f4e-8eba-a12bbf1ce302" x="45" y="725" width="223" height="23"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="f1c38afd-f646-4da8-be09-e6f22f0c5b02" x="47" y="726" width="218" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[PHOTO LAIN-LAIN 1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="daf3ec26-1bf0-4d42-a2b0-71b23a5263a0" x="290" y="727" width="218" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[PHOTO LAIN-LAIN 2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="58b6d5fc-9c12-4d47-94dc-79e7f10976d5" x="122" y="68" width="315" height="15"/>
+				<textElement textAlignment="Left">
+					<font isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[REPORT SURVEY PENDATAAN SITE/TOWER TELEKOMUNIKASI]]></text>
+			</staticText>
+			<image scaleImage="RetainShape">
+				<reportElement uuid="1e85e401-b002-439c-94e6-4ff9bee9dcf9" x="44" y="50" width="58" height="60"/>
+				<imageExpression><![CDATA[$F{logoMitra}]]></imageExpression>
+			</image>
+			<image scaleImage="FillFrame">
+				<reportElement uuid="937ba4d4-ab27-4e58-b1f0-a9028912ebe3" x="458" y="52" width="78" height="65"/>
+				<imageExpression><![CDATA[$F{logoCompanny}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="b89ee108-68b1-4c7c-ad53-41d851a74f10" x="107" y="84" width="348" height="15"/>
+				<textElement textAlignment="Left">
+					<font isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[(SURVEY IDENTIFIKASI, KAPABILITAS KAPASITAS TOWER EKSISTING)]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="5cc4310b-2ed6-4757-93e8-8abdd0aad52d" x="106" y="52" width="348" height="15"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{title}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

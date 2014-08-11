@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="site_report" language="groovy" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="16114cce-33c1-4102-8ac3-b47cf6e33d49">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="48"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#C3CFD9">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#E6F3FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab Data Text" hAlign="Center"/>
+	<subDataset name="Table Dataset 1" uuid="c5a7ff2c-73da-422a-aa5b-6d098ee9b482"/>
+	<field name="idSite" class="java.lang.String"/>
+	<field name="pemilik" class="java.lang.String"/>
+	<field name="alamat" class="java.lang.String"/>
+	<field name="kelurahan" class="java.lang.String"/>
+	<field name="kecamatan" class="java.lang.String"/>
+	<field name="latitude" class="java.lang.String"/>
+	<field name="logitude" class="java.lang.String"/>
+	<field name="operatorPengguna" class="java.lang.String"/>
+	<field name="penggunaTidakDiketahui" class="java.lang.String"/>
+	<field name="xl" class="java.lang.String"/>
+	<field name="isatCdma" class="java.lang.String"/>
+	<field name="smartFren" class="java.lang.String"/>
+	<field name="tsel" class="java.lang.String"/>
+	<field name="hcpt" class="java.lang.String"/>
+	<field name="nts" class="java.lang.String"/>
+	<field name="sti" class="java.lang.String"/>
+	<field name="flexi" class="java.lang.String"/>
+	<field name="esia" class="java.lang.String"/>
+	<field name="imageDetail1" class="java.lang.String"/>
+	<field name="tipeSite" class="java.lang.String"/>
+	<field name="tipeTower" class="java.lang.String"/>
+	<field name="tinggi" class="java.lang.String"/>
+	<field name="shelterOutdoor" class="java.lang.String"/>
+	<field name="shelterIndoor" class="java.lang.String"/>
+	<field name="sektoral" class="java.lang.String"/>
+	<field name="radioKurang" class="java.lang.String"/>
+	<field name="radioLebih" class="java.lang.String"/>
+	<field name="luasTanah" class="java.lang.String"/>
+	<field name="statusPenggunaan" class="java.lang.String"/>
+	<field name="tanggalSurvey" class="java.lang.String"/>
+	<field name="imegeDetail2" class="java.lang.String"/>
+	<field name="logoImage" class="java.lang.String"/>
+	<field name="logoMitra" class="java.lang.String"/>
+	<field name="title" class="java.lang.String"/>
+	<field name="keterangan" class="java.lang.String"/>
+	<field name="isatGsm" class="java.lang.String"/>
+	<field name="siteCoverage" class="java.lang.String"/>
+	<field name="estetikaSekitarSite" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="1" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="780" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="3e978321-b8f5-495d-ba48-dbd7a775f852" x="296" y="553" width="213" height="164"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="9744d545-b296-4542-baf4-b0b953c5d383" x="296" y="717" width="213" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="0b8b3ed9-48eb-42fc-9ff0-e65674242c67" x="45" y="717" width="213" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="8e1f7d02-f82c-44b4-bb71-fdf5b6bae342" x="45" y="553" width="213" height="164"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="0690a0f9-d6e4-4be4-aef8-e1d5cd4a41b2" x="45" y="142" width="21" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[NO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9b46cafe-4efc-41c7-a7d9-f5586e8834b3" x="68" y="143" width="441" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[IDENTITAS / INFORMASI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="0b12647c-bb80-4340-8804-66810c89efaa" x="44" y="155" width="21" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c205a9a5-4279-4566-a3df-a783f6112435" x="45" y="169" width="21" height="30"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="17e5a52b-5743-4274-a807-713f98e31d83" x="45" y="199" width="21" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[3]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="e3c0d0e2-0a36-423f-97d8-98cfd939e88b" x="44" y="216" width="21" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[4]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a86c0a38-65ba-4571-b501-388a066be098" x="45" y="217" width="21" height="45"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[5]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="0417aca3-179d-4790-a39f-fc65cc056f5d" x="70" y="155" width="51" height="15"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isItalic="false"/>
+				</textElement>
+				<text><![CDATA[ID SITE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="47a2f6e9-59ee-46e4-a2f7-08be0258aeaa" x="70" y="170" width="64" height="30"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[ALAMAT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="e35da8a4-3d2c-4885-8d11-ca6efd169eb3" x="70" y="200" width="66" height="15"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[KELURAHAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="debdaaf0-72dd-4081-8aee-1006926d7864" x="70" y="216" width="51" height="15"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[LATITUDE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1eedd289-6cea-4e40-b6d7-7c80dacb729a" x="70" y="232" width="119" height="15"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<text><![CDATA[OPERATOR PENGGUNA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9803ee59-e9fc-4d40-8d1d-4e5700d57800" x="292" y="232" width="151" height="15"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<text><![CDATA[PENGGUNA TIDAK DIKETAHUI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="13b2694e-1a36-433d-b606-a401287372aa" x="292" y="200" width="65" height="15"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[KECAMATAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f6f02acd-9ffb-4d95-8cce-0e92b2c82625" x="292" y="216" width="65" height="15"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[LONGITUDE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="3ab70752-d866-4dc0-9f56-9a20b8b87075" x="292" y="156" width="52" height="13"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<text><![CDATA[PEMILIK]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="34986d90-ca99-4e07-b537-c156e56c37a1" x="70" y="247" width="39" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[XL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="2ec28b06-4e68-45e8-ae9d-c2a576512e8e" x="109" y="247" width="36" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[ISAT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="01877a3e-74eb-4655-9325-9a349306ea3d" x="150" y="247" width="59" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[SMARTfren]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="bc11fa6c-af50-4e36-aec8-d14e1b95de97" x="213" y="247" width="43" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[TSEL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a3d304fb-b739-4f29-94b3-e0b184c26768" x="258" y="247" width="41" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[HCPT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8bf5808f-81e4-4073-9740-a567b9bb224e" x="300" y="247" width="44" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[NTS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="277701fe-b9cf-44e0-877c-521c03907db7" x="347" y="247" width="66" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[STI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="808d9d79-0975-4a43-b253-db16482e5329" x="414" y="247" width="58" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[FLEXI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="3516769a-b99c-4774-afb1-2ff2b5e35a79" x="473" y="247" width="35" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[ESIA]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="1ba04f0f-42be-470b-80b5-18a067feb672" x="146" y="155" width="135" height="15" forecolor="#0000CC"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{idSite}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="4ac994de-3712-448b-ae81-cbf55faa0686" x="146" y="199" width="135" height="15" forecolor="#0000CC"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{kelurahan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="3a00ddd9-86ea-4bd6-a628-c839b0008175" x="368" y="201" width="135" height="14" forecolor="#0000CC"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{kecamatan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="52a40fdb-86e0-4ab4-9fc0-3e7f6e6034b0" x="368" y="216" width="135" height="15" forecolor="#0000CC"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{logitude}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="c272f3e0-39ba-4df7-a1bb-b12c9c0413b3" x="146" y="216" width="135" height="15" forecolor="#0000CC"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{latitude}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="f8762f6e-808f-4cce-b58e-bb9644d235a6" x="197" y="232" width="84" height="15" forecolor="#3333FF"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{operatorPengguna}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="e7716124-abc0-498a-ae20-0109c865b765" x="443" y="231" width="64" height="15" forecolor="#3333FF"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{penggunaTidakDiketahui}.equals( "" ) ? "0" : $F{penggunaTidakDiketahui}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement uuid="3830251b-93cd-447b-8b50-09547d48fc2a" x="44" y="142" width="464" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="5fb1ed91-ec5a-4a07-bb51-dce7d64fdb37" x="44" y="156" width="464" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="2f425376-bbab-45d0-88e1-af828958e146" x="45" y="279" width="463" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="5f4f7823-a00d-41fe-b4b3-894376a544e9" x="66" y="262" width="442" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="64638f8e-e74d-4cc6-983d-0460576edd8b" x="66" y="247" width="442" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="703057e1-e8b5-4200-b5cc-dc41d9295099" x="45" y="231" width="463" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="dfb583d3-6f04-4ec1-bc7c-3bb46c8d0936" x="45" y="215" width="463" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="40a83c8c-8a11-4c74-9c18-ef8767748387" x="45" y="200" width="463" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="1abe03db-b335-487d-b6bc-1c7ed1f5bf38" x="44" y="169" width="464" height="1"/>
+			</line>
+			<line direction="BottomUp">
+				<reportElement uuid="da44ff27-daed-4c53-a1dd-2d6e78f3a6aa" x="44" y="143" width="1" height="137"/>
+			</line>
+			<line direction="BottomUp">
+				<reportElement uuid="b4a04433-2651-4bc8-a168-145a7167da19" x="66" y="142" width="1" height="137"/>
+			</line>
+			<line direction="BottomUp">
+				<reportElement uuid="2ed260e2-475b-4d14-b273-8c1c66074209" x="108" y="247" width="1" height="32"/>
+			</line>
+			<line direction="BottomUp">
+				<reportElement uuid="dd0fe679-a230-45bf-b046-b0a41dc4d30a" x="146" y="248" width="1" height="31"/>
+			</line>
+			<line direction="BottomUp">
+				<reportElement uuid="ef0ee4b8-9668-4547-8846-85010abd7cd2" x="209" y="247" width="1" height="32"/>
+			</line>
+			<line direction="BottomUp">
+				<reportElement uuid="2438aebb-187c-4bd4-bcf3-a42f71305d9e" x="257" y="247" width="1" height="32"/>
+			</line>
+			<line direction="BottomUp">
+				<reportElement uuid="f5c3bc40-7b52-464c-b781-c4567b1f9825" x="299" y="247" width="1" height="32"/>
+			</line>
+			<line direction="BottomUp">
+				<reportElement uuid="50e13ef3-e93d-4d07-baa1-b9a1fce739ed" x="346" y="247" width="1" height="32"/>
+			</line>
+			<line direction="BottomUp">
+				<reportElement uuid="f75b0689-2f11-4e71-9ce6-37bf30f65c14" x="413" y="247" width="1" height="32"/>
+			</line>
+			<line direction="BottomUp">
+				<reportElement uuid="26d2b1f9-409a-4171-b825-44abad3ad698" x="472" y="247" width="1" height="32"/>
+			</line>
+			<line direction="BottomUp">
+				<reportElement uuid="8a23b6a7-8898-4e45-bf64-e23c39dd24cd" x="508" y="143" width="1" height="137"/>
+			</line>
+			<line direction="BottomUp">
+				<reportElement uuid="4c249eac-e010-4580-b94e-517ce0214759" x="194" y="232" width="1" height="15"/>
+			</line>
+			<line direction="BottomUp">
+				<reportElement uuid="c35137ac-acd2-4fb2-8312-b4f2a8940e56" x="443" y="232" width="1" height="15"/>
+			</line>
+			<line direction="BottomUp">
+				<reportElement uuid="4b2830c9-8848-4b7d-bb3f-734fca7bc769" x="285" y="200" width="1" height="47"/>
+			</line>
+			<line direction="BottomUp">
+				<reportElement uuid="b9bbf9fb-15b7-4ca5-b077-52d07bb636af" x="285" y="157" width="1" height="12"/>
+			</line>
+			<textField>
+				<reportElement uuid="58113c22-803e-4f11-9873-d3b7980d583f" x="147" y="170" width="360" height="30" forecolor="#0000CC"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{alamat}]]></textFieldExpression>
+			</textField>
+			<line direction="BottomUp">
+				<reportElement uuid="00fb019d-1bd3-47d5-a145-ee4d8d6a3469" x="139" y="157" width="1" height="74"/>
+			</line>
+			<line direction="BottomUp">
+				<reportElement uuid="0960b0be-8715-4b54-b4d0-c9a46e0cab38" x="362" y="156" width="1" height="13"/>
+			</line>
+			<line direction="BottomUp">
+				<reportElement uuid="b942f11c-d830-478b-8654-7f1e2da225cb" x="363" y="200" width="1" height="31"/>
+			</line>
+			<staticText>
+				<reportElement uuid="423f448d-fede-464d-8b13-86bbfddb97b6" x="44" y="121" width="233" height="20"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SITE IDENTIFIKASI & PENGGUNA]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="d5096e87-354b-460b-b0c0-72452789d698" x="45" y="309" width="463" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="0add2daf-f8a7-41af-b3b7-b558d96bb8a6" x="46" y="288" width="249" height="18"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[STRUKTUR & KONDISI SITE / TOWER]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8ca53daa-8c20-4760-9aa5-25ebebfc5dc7" x="45" y="309" width="20" height="16"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8c9f646f-d052-4fc7-8cdd-e59e81fb71ed" x="45" y="324" width="20" height="45"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="019dd1f9-050b-4f01-8683-1e2b8b9d09e6" x="45" y="369" width="20" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[3]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="fd5a87b8-3e85-4355-89da-8e5ff358deac" x="66" y="311" width="82" height="15"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<text><![CDATA[TIPE SITE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f08b3540-3144-4e02-a1c9-ed0ea46ae27b" x="219" y="310" width="63" height="15"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<text><![CDATA[TIPE TOWER]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="cb78e0ce-a3fb-4e62-a1a6-a4d6bb152fe7" x="389" y="311" width="84" height="13"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<text><![CDATA[TINGGI (meter)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="e7f8c0b0-2612-4c86-9a3a-3db00b9d1685" x="66" y="326" width="89" height="16"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[JUMLAH SHELTER]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="498c63fc-8b2c-418a-9ced-1fc0796c87fc" x="161" y="325" width="100" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[MINI (Outdoor BTS)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7bf16800-a396-4e30-9568-1e1e6a178343" x="160" y="339" width="93" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[MINI (Intdoor BTS)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="11009e5d-0b93-4001-b2aa-642c5a127c8f" x="297" y="326" width="85" height="13"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[JUMLAH ANTENA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a886b6b3-caaf-4b6c-a8cd-9e1f5b05a642" x="389" y="325" width="84" height="15"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<text><![CDATA[SEKTORAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1b9c8692-f8a7-4529-90f6-b86e7be35395" x="389" y="341" width="91" height="13"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<text><![CDATA[RADOME(<0.6 m)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="4a4ff46e-66b9-4ede-a543-e4f112799389" x="389" y="355" width="91" height="13"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<text><![CDATA[RADOME(>0.6 m)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="76f899d3-c949-4d76-82f1-208db4e5b29d" x="66" y="354" width="191" height="15"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[KAPABILITAS SITE TOWER]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a50e92a0-1d69-4bcf-ab82-fb24f0138f7b" x="66" y="368" width="90" height="15"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<text><![CDATA[LUAS TANAH (m)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="68f8b7af-8b99-4e15-9b32-a72919b18c6a" x="267" y="369" width="114" height="15"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<text><![CDATA[RESIDENSIAL ZONING]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7922c5f6-9436-4e43-be11-e24ee92d33c9" x="66" y="384" width="443" height="15"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<text><![CDATA[TEMPAT YANG MASIH ADA PADA SITE / TOWER JIKA ADA PENAMBAHAN :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7c2f76ef-5614-4d53-bb0a-8731d882f323" x="66" y="399" width="192" height="15"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<text><![CDATA[SHELTER MAKRO (INDOOR BTS)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7dfcd685-3579-4a45-9a0a-d2fc6e79d131" x="66" y="414" width="220" height="15"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<text><![CDATA[SISTEM ANTENA (1 SET BTS MW)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="73d0897e-008b-461e-b6e1-15426e5ced38" x="296" y="399" width="167" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[SHELTER MINI (OUTDOOR BTS)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="99d211d9-619f-4c93-8ded-d1739c49636e" x="44" y="384" width="20" height="45"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[4]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="639dfa65-8595-4209-b606-71b4a2ed9c9b" x="66" y="429" width="152" height="23"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<text><![CDATA[SITE COVERAGE ZONING]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="cf1f87d6-38f1-49b0-aab7-f857733dbdff" x="66" y="452" width="152" height="15"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<text><![CDATA[ESTETIKA COVERAGE ZONING]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="11680770-3ce8-4543-9019-accbef3f6fd3" x="66" y="467" width="152" height="15"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<text><![CDATA[STATUS PENGGUNAAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="191aa872-bb10-4795-acb8-c6f17fd61591" x="66" y="482" width="152" height="15"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<text><![CDATA[TANGGAL SURVEY]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="2264533c-095c-400f-804a-c8c6cf2cf564" x="66" y="496" width="152" height="30"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<text><![CDATA[KETERANGAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="212243e4-a9b7-4ec7-8e67-06ae8fb51c60" x="45" y="429" width="19" height="23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[5]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f394be18-bf18-45b0-8a91-a43f2a7a461b" x="44" y="452" width="20" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[6]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="631918a3-a1cb-4edf-bcc6-f93d88bfeff0" x="44" y="467" width="20" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[7]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="db6e80a8-5062-4a07-9889-f527bbe5aea5" x="44" y="482" width="20" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[8]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1e3db46e-4123-4f07-a32a-97139e9bc5c9" x="44" y="497" width="20" height="30"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[9]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="92dc5224-a521-4fd2-a0c9-d2a08c198439" x="45" y="526" width="463" height="1"/>
+			</line>
+			<line direction="BottomUp">
+				<reportElement uuid="d9332e65-df10-4877-bd33-bb7bf5c508c5" x="45" y="310" width="1" height="216"/>
+			</line>
+			<line direction="BottomUp">
+				<reportElement uuid="5b9a2e38-4a48-451e-b29b-6bcd8af9e832" x="508" y="309" width="1" height="218"/>
+			</line>
+			<line>
+				<reportElement uuid="44a4ba24-bd13-4685-929e-4894b50eb8aa" x="45" y="496" width="463" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="eed5c0fc-7381-42cd-85a5-6e2758488cb1" x="45" y="482" width="463" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="a702f97e-21ee-4142-b0ee-c9569cb9a96f" x="45" y="467" width="463" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="1111d51c-1e98-41a6-82a5-c69bf5c5ebb7" x="45" y="429" width="463" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="5ca291db-96e0-46ae-ba8c-9fdb204bee90" x="45" y="452" width="463" height="1"/>
+			</line>
+			<line direction="BottomUp">
+				<reportElement uuid="539632c9-10b0-45a3-a623-d689ce98712b" x="63" y="310" width="1" height="216"/>
+			</line>
+			<line>
+				<reportElement uuid="ade84f16-996f-4af0-b7fe-0b3b9c05608a" x="45" y="383" width="463" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="939cc70d-0314-4962-879e-421d19fc8322" x="45" y="368" width="463" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="425e94ab-9f8b-4b30-8618-fffe76929b8f" x="45" y="325" width="463" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="360e1a2b-71ec-46e9-9948-56267d9e7fec" x="63" y="399" width="445" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="3eba7647-80a8-4830-ae52-fe83c205b968" x="64" y="413" width="444" height="1"/>
+			</line>
+			<line direction="BottomUp">
+				<reportElement uuid="720bf064-75ea-4821-86f4-489f2f8ccbe7" x="161" y="309" width="1" height="46"/>
+			</line>
+			<line direction="BottomUp">
+				<reportElement uuid="2cd18cbb-8c26-4ca7-9ea2-5ff07d548b7e" x="293" y="310" width="1" height="58"/>
+			</line>
+			<line direction="BottomUp">
+				<reportElement uuid="5067bda8-e83d-4464-8df5-7f90c79b8dbf" x="264" y="326" width="1" height="57"/>
+			</line>
+			<line direction="BottomUp">
+				<reportElement uuid="fd1c3b24-06ef-4c8c-88ea-b823c6cd536c" x="385" y="310" width="1" height="73"/>
+			</line>
+			<line direction="BottomUp">
+				<reportElement uuid="505d7b05-cb8f-4aa9-a178-ca7f42c30a34" x="482" y="309" width="1" height="59"/>
+			</line>
+			<line>
+				<reportElement uuid="9f7ee6f6-4b78-42e2-ba77-c9b58369c554" x="64" y="354" width="229" height="1"/>
+			</line>
+			<line direction="BottomUp">
+				<reportElement uuid="64f5c6b1-e9c3-4026-a06c-f42e04020042" x="162" y="340" width="131" height="1"/>
+			</line>
+			<line direction="BottomUp">
+				<reportElement uuid="4e003cc2-7f1a-44f6-a62d-7b0f3c1ac9c8" x="386" y="340" width="122" height="1"/>
+			</line>
+			<line direction="BottomUp">
+				<reportElement uuid="2a58ffd2-688c-4902-9fb9-fc35004a9c69" x="161" y="368" width="1" height="15"/>
+			</line>
+			<line direction="BottomUp">
+				<reportElement uuid="78276806-3da7-4f13-b86c-89d55be2e9f5" x="264" y="400" width="1" height="13"/>
+			</line>
+			<line direction="BottomUp">
+				<reportElement uuid="e587086e-c4c2-4485-98e4-57f7384199b7" x="293" y="399" width="1" height="30"/>
+			</line>
+			<line direction="BottomUp">
+				<reportElement uuid="fc76e49e-8666-43ea-bdf5-a23ab8958366" x="482" y="399" width="1" height="14"/>
+			</line>
+			<line direction="BottomUp">
+				<reportElement uuid="07be2e61-8ee0-4281-bf59-046f838f99b9" x="226" y="429" width="1" height="97"/>
+			</line>
+			<staticText>
+				<reportElement uuid="f2264e66-29dc-44d2-8ced-60f8b6cad40d" x="45" y="531" width="181" height="20"/>
+				<textElement>
+					<font size="12" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[PHOTO DOKUMENTASI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c05899b1-f1a4-441e-94e5-6a84f4baffbb" x="47" y="717" width="210" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[IDENTITAS SITE 1]]></text>
+			</staticText>
+			<image scaleImage="RealSize" hAlign="Center" vAlign="Middle">
+				<reportElement uuid="de4a8583-53fa-4776-ae28-e4d5c80f13a8" stretchType="RelativeToBandHeight" x="51" y="562" width="200" height="150"/>
+				<imageExpression><![CDATA[$F{imageDetail1}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement uuid="97d52698-44fb-4c62-bb8a-a71976051f1d" x="162" y="310" width="51" height="15" forecolor="#0000CC"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tipeSite}]]></textFieldExpression>
+			</textField>
+			<line direction="BottomUp">
+				<reportElement uuid="60dd1622-0fed-49e8-a698-93a843afa5ca" x="213" y="310" width="1" height="16"/>
+			</line>
+			<textField>
+				<reportElement uuid="79324f45-1e88-4835-aa51-5a2055e46717" x="298" y="310" width="83" height="15" forecolor="#0000CC"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tipeTower}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="c0c04fc2-a8c3-494e-8045-81386e625518" x="486" y="310" width="22" height="15" forecolor="#0000CC"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{tinggi}.equals("")? "0" : $F{tinggi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="2577997b-783e-470b-97c1-8a31835c7b9c" x="266" y="325" width="26" height="15" forecolor="#0000CC"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{shelterOutdoor}.equals("")? 0 : $F{shelterOutdoor}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="af454726-14b1-4987-b6ce-261b4ee40065" x="486" y="326" width="21" height="15" forecolor="#0000CC"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{sektoral}.equals("")? "0" : $F{sektoral}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="2123137d-7257-439d-ad4f-1e290765cdc0" x="266" y="340" width="26" height="15" forecolor="#0000CC"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{shelterIndoor}.equals("")? 0 :$F{shelterIndoor}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d58612b-e47f-4359-bdad-6e9beebfedc2" x="486" y="342" width="21" height="13" forecolor="#0000CC"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{radioKurang}.equals("")? "0" : $F{radioKurang}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="f42c002b-1cb6-4ac9-a40b-85d2feba3d6f" x="487" y="356" width="20" height="13" forecolor="#0000CC"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{radioLebih}.equals("")? "0" :$F{radioLebih}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="5287ca90-78f5-4c02-9b72-9468aeb9ecb9" x="231" y="468" width="271" height="14" forecolor="#0000CC"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{statusPenggunaan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="ec62449e-4d87-4701-b366-ba3323c335df" x="231" y="483" width="271" height="13" forecolor="#0000CC"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tanggalSurvey}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="c8789a8c-afe2-4ff8-a58a-2b11abe42816" x="171" y="369" width="88" height="14" forecolor="#0000CC"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{luasTanah}.equals("")? "0" : $F{luasTanah}]]></textFieldExpression>
+			</textField>
+			<image scaleImage="RealSize" hAlign="Center" vAlign="Middle">
+				<reportElement uuid="ad98d51e-d0f1-468a-923c-e662298de6e0" stretchType="RelativeToBandHeight" x="302" y="562" width="200" height="150"/>
+				<imageExpression><![CDATA[$F{imegeDetail2}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement uuid="a5ad9575-5d34-49db-966a-79cc66207a31" x="106" y="52" width="348" height="15"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{title}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7c2fcd99-2c25-4bb8-9659-94c535cd0cae" x="231" y="497" width="272" height="29" forecolor="#0000CC"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{keterangan}]]></textFieldExpression>
+			</textField>
+			<image scaleImage="RetainShape">
+				<reportElement uuid="1c6c1412-82cb-460f-bd67-0cfeac4b2887" x="44" y="50" width="58" height="60"/>
+				<imageExpression><![CDATA[$F{logoMitra}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="1418be53-b5d8-40bf-8733-9f2713edce78" x="296" y="717" width="211" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[IDENTITAS SITE 2]]></text>
+			</staticText>
+			<image scaleImage="FillFrame">
+				<reportElement uuid="0a4d6d0f-6820-42c8-a9d5-abf1bec20f88" x="458" y="52" width="78" height="65"/>
+				<imageExpression><![CDATA[$F{logoImage}]]></imageExpression>
+			</image>
+			<line direction="BottomUp">
+				<reportElement uuid="69b351fb-43e8-4372-84f9-05e123fa8dcd" x="386" y="354" width="122" height="1"/>
+			</line>
+			<textField>
+				<reportElement uuid="feb3724a-c7cf-4559-a71f-0440db309b1c" x="231" y="430" width="271" height="22" forecolor="#0000CC"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{siteCoverage}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="94dadb4b-36eb-4a1d-b79e-32a8837b0a19" x="231" y="453" width="271" height="14" forecolor="#0000CC"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{estetikaSekitarSite}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement uuid="451c1c02-0ac3-4353-be54-3bfe0f8b6064" x="81" y="264" width="15" height="15"/>
+				<imageExpression><![CDATA[$F{xl}.equals("")? "no.png" :  "check0.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="d3c36e3e-2de4-48bc-a666-a6ee6a49fbf6" x="119" y="264" width="15" height="15"/>
+				<imageExpression><![CDATA[$F{isatCdma}.equals("") && $F{isatGsm}.equals("")? "no.png" :  "check0.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="1abf5b2f-812e-4c38-b673-ce5dc5f2a362" x="170" y="264" width="15" height="15"/>
+				<imageExpression><![CDATA[$F{smartFren}.equals("")? "no.png" :  "check0.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="4fb3d0da-0058-422d-90c1-ac36baa7dad7" x="227" y="264" width="15" height="15"/>
+				<imageExpression><![CDATA[$F{tsel}.equals("")? "no.png" :  "check0.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="98a07356-ac41-4059-99ed-cf00ea04c08e" x="271" y="264" width="15" height="15"/>
+				<imageExpression><![CDATA[$F{hcpt}.equals("")? "no.png" :  "check0.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="e4da4bc0-ae08-4aac-bc99-d62aaea629d0" x="315" y="264" width="15" height="15"/>
+				<imageExpression><![CDATA[$F{nts}.equals("")? "no.png" :  "check0.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="a67cd8c8-0afc-4722-a284-5e4ce3f8986a" x="373" y="264" width="15" height="15"/>
+				<imageExpression><![CDATA[$F{sti}.equals("")? "no.png" :  "check0.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="73e64618-4be1-4830-af68-d5b038c28207" x="436" y="264" width="15" height="15"/>
+				<imageExpression><![CDATA[$F{flexi}.equals("")? "no.png" :  "check0.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="3baa871e-6537-42be-bf3c-7b0959501aca" x="483" y="264" width="15" height="15"/>
+				<imageExpression><![CDATA[$F{esia}.equals("")? "no.png" :  "check0.png"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement uuid="3d453961-6f1c-4831-8684-c18fcf38680b" x="367" y="155" width="139" height="15" forecolor="#0000CC"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{pemilik}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="62ed18bc-9dd3-4dcd-a1f3-bd0c857f057e" x="122" y="68" width="315" height="15"/>
+				<textElement textAlignment="Left">
+					<font isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[REPORT SURVEY PENDATAAN SITE/TOWER TELEKOMUNIKASI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="62ed18bc-9dd3-4dcd-a1f3-bd0c857f057e" x="106" y="84" width="348" height="15"/>
+				<textElement textAlignment="Left">
+					<font isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[(SURVEY IDENTIFIKASI, KAPABILITAS KAPASITAS TOWER EKSISTING)]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
